@@ -149,20 +149,18 @@ def event_handle(event):
 
     if msgType == "text":
         msg = str(event["message"]["text"])
-         if (msg == "สวัสดี") :
-           replyObj = TextSendMessage(text="ดีด้วย")
+        if (msg == "สวัสดี") :
+             replyObj = TextSendMessage(text="ดีด้วย")
         else :
-         if (msg == "น้องอินจุน") :
-           replyObj = TextSendMessage(text="เป็นแงว")
-        else :
-         if (msg == "แล้วน้องบอมกยู") :
-           replyObj = TextSendMessage(text="เป็นนางฟ้า")
-        else :
-         if (msg == "เก่งอะ") :
-           replyObj = TextSendMessage(text="บูบู")
-        else :
+            replyObj = TextSendMessage(text=msg)
+        elif (msg == "น้องอินจุน") : 
+            replyObj = TextSendMessage(text="เป็นรูกแงว")
+        elif (msg == "txt") : 
+            replyObj = TextSendMessage(text="เพลงดีมาก")
+        elif (msg == "วินวินจะกลับ127เมื่อไหร่") : 
+            replyObj = TextSendMessage(text="ถามหมานจ้า")         
         if (msg == "เบอ1เจน4วงอะไร") :
-           replyObj = TextSendMessage(text="ทูมอโร่บายทูเกเต้อ!")
+            replyObj = TextSendMessage(text="ทูมอโร่บายทูเกเต้อ!")
         else :
             replyObj = TextSendMessage(text=msg)
         line_bot_api.reply_message(rtoken, replyObj)
