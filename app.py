@@ -151,12 +151,12 @@ def event_handle(event):
         msg = str(event["message"]["text"])
         if (msg == "สวัสดี") :
             replyObj = TextSendMessage(text="ดีด้วย")
-        elif (msg == "น้องอินจุน") : 
-            replyObj = TextSendMessage(text="เป็นรูกแงว")
-        elif (msg == "txt") : 
-            replyObj = TextSendMessage(text="เพลงดีมาก")
-        elif (msg == "วินวินจะกลับ127เมื่อไหร่") : 
-            replyObj = TextSendMessage(text="ถามหมานจ้า")         
+        elif (msg == "อินจุนห้าขวบหรืออินจุนห้าคน") : 
+            replyObj = TextSendMessage(text="ห้าขวบ!")
+        elif (msg == "งูเขียวสีอะไร") : 
+            replyObj = TextSendMessage(text="สีชมพูมั้งไม่รู้ดิ")
+        elif (msg == "ไปเที่ยวกัน") : 
+            replyObj = TextSendMessage(text="ไม่ไปดีกว่า")         
         if (msg == "เบอ1เจน4วงอะไร") :
             replyObj = TextSendMessage(text="ทูมอโร่บายทูเกเต้อ!")
         else :
